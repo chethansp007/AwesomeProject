@@ -1,4 +1,4 @@
-package com.awesomeproject;
+package com.intelligencereactnativelibraryexample;
 
 import android.app.Application;
 

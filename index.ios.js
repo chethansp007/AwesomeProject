@@ -12,7 +12,33 @@ import {
   View
 } from 'react-native';
 
-export default class AwesomeProject extends Component {
+
+ var IntellSingelton = require('./Component/Singleton');
+// var intel = require('intelligence-react-native');
+  
+  var customData = require('./Component/IntelligenceConfiguration.json');
+
+
+export default class IntelligenceReactNativeLibraryExample extends Component {
+  
+  constructor(props){
+
+      super(props);
+
+      var Singelton = new IntellSingelton()
+
+      Singelton.initlizeIntelligence((error,token)=>{
+        
+          Singelton.postEvent("Native-Event1",{},(error) => { 
+
+                  console.log("Status is here");
+                  console.log(error);
+          
+          });
+
+      });
+  }
+
   render() {
     return (
       <View style={styles.container}>
@@ -50,4 +76,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('AwesomeProject', () => AwesomeProject);
+AppRegistry.registerComponent('IntelligenceReactNativeLibraryExample', () => IntelligenceReactNativeLibraryExample);

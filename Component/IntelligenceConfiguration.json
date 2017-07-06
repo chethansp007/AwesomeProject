@@ -1,0 +1,16 @@
+{
+    "clientId": "IOS_-_Automation_1495532816",
+    "clientSecret": "cfsMZNCx41YXHQp91X0k3Fdv",
+    "applicationId": 4308,
+    "projectId": 30189,  
+    "identity" : {
+          "md5Hash" : true
+        },     
+
+    "analytics" : {
+          "useGeolocation" : true
+    }
+}
+
+   //"username" : "chethan.palaksha@tigerspike.com",
+    //"password" : "Donbosco123",
